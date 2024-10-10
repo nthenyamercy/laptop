@@ -1,0 +1,64 @@
+/* Basic styles for the website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+/* Laptop grid layout */
+.laptop-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.laptop-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensuring images fit the grid properly */
+.laptop-item img {
+    width: 100%; /* Makes the image take the full width of its container */
+    height: auto; /* Maintains the image's aspect ratio */
+    max-width: 180px; /* Optional: Limit the max width so it fits within the grid item */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#cart, #payment, #register, #about, #contact, #terms {
+    padding: 2rem;
+}
+.icon{
+    size: 10px;
+}
